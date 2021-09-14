@@ -3,12 +3,19 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Button, Typography } from '@material-ui/core';
 
-import FindMaster from '../FindMasterPage/SearchCategory';
+import styled from 'styled-components';
 
 //createTheme 외않되
 import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import deepOrange from '@material-ui/core/colors/deepOrange';
+
+const StyledLink = styled(Link)`
+    text-decoration: none;
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+    `;
 
 const useStyles = makeStyles((theme)=>({
     appbar:{
@@ -58,7 +65,9 @@ export default function Header(){
                         </Typography>
                         <Button className={classes.masterbtn}>고수가입</Button>
                         <Button>회원가입</Button>
-                        <Link to="/findmaster"><Button>고수 찾기</Button></Link>
+                        <Link to="/findmaster" style={{ color: 'inherit', textDecoration: 'inherit'}}>
+                            <Button>고수 찾기</Button>
+                        </Link>
                         <Button>로그인</Button>
                 </Toolbar>
             </AppBar>
