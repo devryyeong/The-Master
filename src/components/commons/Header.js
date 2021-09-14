@@ -21,12 +21,6 @@ const useStyles = makeStyles((theme)=>({
     appbar:{
         background: 'none',
     },
-    toolbar:{
-        color: 'black',
-    },
-    menuButton: {
-        marginRight: theme.spacing(2),
-    },
     title: {
         flexGrow: 1,
     },
@@ -40,6 +34,10 @@ const useStyles = makeStyles((theme)=>({
         padding: '0 20px',
         margin: '0 30px',
         fontWeight: "bold",
+    },
+    link:{
+        color: 'inherit',
+        textDecoration: 'inherit',
     },
 }));
 
@@ -59,19 +57,26 @@ export default function Header(){
         
         <ThemeProvider theme={theme}>
             <AppBar className={classes.appbar} position="static">
-                <Toolbar className={classes.toolbar}>
+                <Toolbar>
+                    {/* <Link to="/" className={classes.link}> */}
                         <Typography variant="h6" className={classes.title}>
                         LOGO
                         </Typography>
-                        <Button className={classes.masterbtn}>고수가입</Button>
-                        <Button>회원가입</Button>
-                        <Link to="/findmaster" style={{ color: 'inherit', textDecoration: 'inherit'}}>
-                            <Button>고수 찾기</Button>
-                        </Link>
-                        <Button>로그인</Button>
+                    {/* </Link> */}
+
+                    <Button className={classes.masterbtn}>고수가입</Button>
+
+                    <Button>회원가입</Button>
+
+                    <Link to="/findmaster" className={classes.link}>
+                        <Button>고수 찾기</Button>
+                    </Link>
+
+                    <Button>로그인</Button>
                 </Toolbar>
             </AppBar>
         </ThemeProvider> 
+
         </div>
     );
 }
