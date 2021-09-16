@@ -5,8 +5,8 @@ import { Button, Typography, InputBase } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 
 const useStyles = makeStyles((theme)=>({
-    mininav: { 
-        //padding: '0 20px',
+    findBtn: {
+        fontWeight: "bold",
     },
     text: {
         flexGrow: 1,
@@ -49,9 +49,9 @@ export default function Search(){
     const classes = useStyles();
     return (
         <div>
-            <div className={classes.mininav}>
-                <Button>서비스 찾기</Button>
-                <Button>고객 찾기</Button>
+            <div>
+                <Button className={classes.findBtn}>서비스 찾기</Button>
+                <Button className={classes.findBtn}>고객 찾기</Button>
             </div>
             <Typography variant="h4" className={classes.text}>
                 1분 만에<br></br>고수를 찾아드려요

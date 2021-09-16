@@ -67,4 +67,3 @@ export default function SearchCategory(){
     );
 }
 
-// 지역, 카테고리 text align left ???
