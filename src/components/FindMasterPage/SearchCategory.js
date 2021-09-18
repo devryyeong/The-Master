@@ -27,7 +27,6 @@ const useStyles = makeStyles((theme)=>({
     indexBox: {
         margin: '30px 0',
     },
-
 }));
 
 

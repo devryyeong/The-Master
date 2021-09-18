@@ -58,11 +58,11 @@ export default function Header(){
         <ThemeProvider theme={theme}>
             <AppBar className={classes.appbar} position="static">
                 <Toolbar>
-                    {/* <Link to="/" className={classes.link}> */}
+                    <Link to="/" className={classes.link}>
                         <Typography variant="h6" className={classes.title}>
                         LOGO
                         </Typography>
-                    {/* </Link> */}
+                    </Link>
 
                     <Button className={classes.masterbtn}>고수가입</Button>
 
