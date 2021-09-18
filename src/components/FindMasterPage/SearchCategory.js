@@ -4,6 +4,7 @@ import { Typography, Button } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
 
 import SearchDialog from './SearchDialog';
+import MasterProfile from '../MasterInfo/MasterProfile';
 
 const useStyles = makeStyles((theme)=>({
     main: { 
@@ -61,6 +62,8 @@ export default function SearchCategory(){
             </Box>
 
             <SearchDialog selectedValue={selectedValue} open={open} onClose={handleClose} />
+
+            <MasterProfile />
 
         </div>
     );

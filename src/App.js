@@ -14,9 +14,9 @@ function App() {
       <Switch>
         <Route path='/findmaster' component={FindMaster} />
           <div style={{ paddingTop: '190px', paddingLeft: '123px', minHeight: 'calc(100vh - 80px)' }}>
-        <Search />
-        <LocalMaster />
-        </div>
+            <Search />
+            <LocalMaster />
+          </div>
       </Switch>
     </Suspense>
   );
