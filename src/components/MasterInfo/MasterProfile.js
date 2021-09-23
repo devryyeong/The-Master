@@ -87,7 +87,7 @@ export default function MasterProfile(){
                 <Box>
                     <Typography variant="h5" gutterBottom component="div">해방플러스 (해충으로부터 해방!)</Typography>
                     <Typography variant="caption" display="block" >바퀴벌레 퇴치</Typography>
-                    <Typography variant="overline" display="block" >별점, 후기 어떻게하조</Typography>
+                    <Typography variant="overline" display="block" >별점-MUI Rating</Typography>
                 </Box>
             </Box>
 

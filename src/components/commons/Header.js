@@ -3,19 +3,10 @@ import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
 import { AppBar, Toolbar, Button, Typography } from '@material-ui/core';
 
-import styled from 'styled-components';
-
 //createTheme 외않되
 import { createTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import deepOrange from '@material-ui/core/colors/deepOrange';
-
-const StyledLink = styled(Link)`
-    text-decoration: none;
-    &:focus, &:hover, &:visited, &:link, &:active {
-        text-decoration: none;
-    }
-    `;
 
 const useStyles = makeStyles((theme)=>({
     appbar:{
