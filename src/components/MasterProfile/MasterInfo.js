@@ -1,9 +1,9 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Button } from '@material-ui/core';
-import Box from '@material-ui/core/Box';
+import { Typography, Box } from '@material-ui/core';
 import Card from "@material-ui/core/Card";
 import CardMedia from "@material-ui/core/CardMedia";
+import Rating from '@mui/material/Rating';
 
 import PropTypes from 'prop-types';
 import Tabs from '@material-ui/core/Tabs';
@@ -29,6 +29,14 @@ const useStyles = makeStyles((theme)=>({
     indexBox: {
         margin: '30px 0',
     },
+    infoBox: {
+        marginTop: '40px'
+    },
+    flexBox: {
+        display: 'flex',
+        flex: 1,
+        justifyContent: 'space-between',
+    }
 }));
 
 function TabPanel(props) {
@@ -79,7 +87,7 @@ export default function MasterProfile(){
                         <CardMedia
                         component="img"
                         height="100"
-                        image="img.jpg"
+                        image="https://cdn.channel.io/plugin/images/unknown_user.jpg"
                         alt="profile img"
                         />
                     </Card>
@@ -87,7 +95,7 @@ export default function MasterProfile(){
                 <Box>
                     <Typography variant="h5" gutterBottom component="div">해방플러스 (해충으로부터 해방!)</Typography>
                     <Typography variant="caption" display="block" >바퀴벌레 퇴치</Typography>
-                    <Typography variant="overline" display="block" >별점-MUI Rating</Typography>
+                    <Rating name="rating" precision={0.5} size="small" defaultValue={4.5}  />
                 </Box>
             </Box>
 
@@ -101,17 +109,46 @@ export default function MasterProfile(){
                         <Tab label="질문답변" {...a11yProps(3)} />
                     </Tabs>
                 </Box>
+
                 <TabPanel value={value} index={0}>
-                One
+                    <Box className={classes.infoBox}>
+                        <Typography variant="h5" gutterBottom component="div" >한줄소개</Typography>
+                        <Typography>Nostrud velit consectetur pariatur pariatur ad. Quis tempor in laboris deserunt laborum pariatur elit pariatur. Quis consequat aute magna cillum pariatur eu consequat sint duis elit velit. Nulla veniam consequat Lorem excepteur excepteur aliqua sit quis cupidatat proident magna.</Typography>
+                    </Box>
+
+                    <Box className={classes.flexBox}>
+                        <Box className={classes.infoBox}>
+                            <Typography variant="h5" gutterBottom component="div" >기본정보</Typography>
+                            <Typography>정해진 형식이 있고 사용자(고수)는 폼에 맞게 입력하는 형태->백?</Typography>
+                        </Box>
+                        <Box className={classes.infoBox}>
+                            <Typography variant="h5" gutterBottom component="div" >추가정보</Typography>
+                            <Typography>마찬가지</Typography>
+                        </Box>
+                    </Box>
+
+                    <Box className={classes.infoBox}>
+                        <Typography variant="h5" gutterBottom component="div" >제공 서비스</Typography>
+                        <Typography>카테고리가 정해져있고 사용자(고수)가 선택할 수 있음.</Typography>
+                    </Box>
+
+                    <Box className={classes.infoBox}>
+                        <Typography variant="h5" gutterBottom component="div" >서비스 상세설명</Typography>
+                        <Typography>더보기/접기 해야함.</Typography>
+                    </Box>
                 </TabPanel>
+
+
+
+
                 <TabPanel value={value} index={1}>
-                Two
+                사진/동영상
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                Three
+                리뷰
                 </TabPanel>
                 <TabPanel value={value} index={3}>
-                Four
+                질문답변
                 </TabPanel>
             </Box>
         </div>

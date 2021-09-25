@@ -4,7 +4,7 @@ import { Typography, Button } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
 
 import SearchDialog from './SearchDialog';
-import MasterProfile from '../MasterInfo/MasterProfile';
+import MasterProfile from '../MasterProfile/MasterInfo';
 
 const useStyles = makeStyles((theme)=>({
     main: { 
