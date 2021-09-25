@@ -20,12 +20,14 @@ export default function CategoryCards(){
     return (
         <div>
             <Card className={classes.root}>
-                <CardActionArea> 
-                <MenuBookIcon color="action" fontSize="large"/>
-                </CardActionArea>
+                <CardActionArea>
+                    <Box textAlign="center" m={1}>
+                        <MenuBookIcon color="action" fontSize="large"/>
+                    </Box>
+                </CardActionArea> 
                 <CardContent>
-                <Typography gutterBottom component="div"></Typography>
-                <Box textAlign="center" m={1}>Lesson</Box>
+                    <Typography gutterBottom component="div"></Typography>
+                    <Box textAlign="center" m={1}>Lesson</Box>
                 </CardContent>
             </Card>
         </div>
