@@ -1,5 +1,5 @@
 import React from 'react';
-import CategoryGrid from './Category/CategoryGrid.js'
+import CategoryCards from './Category/CategoryCards.js'
 import { alpha, makeStyles } from '@material-ui/core/styles';
 import { Button, Typography, InputBase } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
@@ -22,8 +22,8 @@ const useStyles = makeStyles((theme)=>({
         },
         marginRight: theme.spacing(2),
         marginLeft: 0,
-        
         border: 1,
+        width: '400px',
     },
     searchIcon: {
         height: '100%',
@@ -58,7 +58,7 @@ export default function Search(){
             </Typography>
 
             {/* Search */}
-            <div className={classes.search}>
+            <div className={classes.search}> 
                 <div className={classes.searchIcon}>
                     <SearchIcon />
                 </div>
@@ -72,7 +72,7 @@ export default function Search(){
             />
             </div>
 
-            <CategoryGrid />
+            <CategoryCards />
         </div>
     );
 }

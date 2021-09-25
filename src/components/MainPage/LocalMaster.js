@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme)=>({
         padding: theme.spacing(3),
         background: '#ffe9de',
         marginRight: theme.spacing(14),
+        marginTop: '50px',
     },
     title: { 
         fontWeight: "bold",
