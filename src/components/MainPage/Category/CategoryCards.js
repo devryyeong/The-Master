@@ -22,6 +22,12 @@ const useStyles = makeStyles((theme)=>({
     card: {
         minWidth: 120,
         margin: '10px 10px',
+    },
+    flexBox: {
+        display: 'flex',
+        //flexDirection: 'column',
+        backgroundColor: 'yellow',
+        //flexGrow: 1,
     }
 }));
 
@@ -29,7 +35,9 @@ export default function CategoryCards(){
     const classes = useStyles();
     return (
         <div>
-            <Grid className={classes.grid} container spacing={3} item xs={8}>
+            <Grid className={classes.grid} container spacing={3} >
+
+                <Box className={classes.flexBox}>
                 {/* 1 */}
                 <Card className={classes.card}>
                     <CardActionArea>
@@ -81,7 +89,9 @@ export default function CategoryCards(){
                         <Box textAlign="center">비즈니스</Box>
                     </CardContent>
                 </Card>
+                </Box>
 
+                <Box className={classes.flexBox}>
                 {/* 5 */}
                 <Card className={classes.card}>
                     <CardActionArea>
@@ -133,6 +143,7 @@ export default function CategoryCards(){
                         <Box textAlign="center">기타</Box>
                     </CardContent>
                 </Card>
+                </Box>
             </Grid>
         </div>
     );

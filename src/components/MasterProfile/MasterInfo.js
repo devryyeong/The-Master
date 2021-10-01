@@ -119,7 +119,7 @@ export default function MasterProfile(){
                     <Box className={classes.flexBox}>
                         <Box className={classes.infoBox}>
                             <Typography variant="h5" gutterBottom component="div" >기본정보</Typography>
-                            <Typography>정해진 형식이 있고 사용자(고수)는 폼에 맞게 입력하는 형태->백?</Typography>
+                            <Typography>정해진 형식이 있고 사용자(고수)는 폼에 맞게 입력하는 형태-백?</Typography>
                         </Box>
                         <Box className={classes.infoBox}>
                             <Typography variant="h5" gutterBottom component="div" >추가정보</Typography>
