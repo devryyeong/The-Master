@@ -1,7 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, Toolbar, Button, Box, Typography } from '@material-ui/core';
+import { AppBar, Toolbar, Button, Box } from '@material-ui/core';
 import Avatar from '@material-ui/core/Avatar';
 
 const useStyles = makeStyles((theme)=>({
@@ -31,8 +31,8 @@ const useStyles = makeStyles((theme)=>({
 }));
 
 export default function Header(){
-
     const classes = useStyles();
+
     return (
         <Box sx={{ flexGrow: 1 }}>
             <AppBar className={classes.appbar} position="static">
@@ -54,7 +54,6 @@ export default function Header(){
                         </Link>
                         <Button>로그인</Button>
                     </Box>
-
                 </Toolbar>
             </AppBar>
         </Box>

@@ -25,8 +25,6 @@ const useStyles = makeStyles((theme)=>({
     },
     flexBox: {
         display: 'flex',
-        //flexDirection: 'column',
-        //backgroundColor: 'yellow',
         flexGrow: 1,
     }
 }));

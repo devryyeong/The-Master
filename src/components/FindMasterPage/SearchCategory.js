@@ -64,7 +64,6 @@ export default function SearchCategory(){
             <SearchDialog selectedValue={selectedValue} open={open} onClose={handleClose} />
 
             <MasterProfile />
-
         </div>
     );
 }

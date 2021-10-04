@@ -134,7 +134,7 @@ export default function MasterProfile(){
 
                     <Box className={classes.infoBox}>
                         <Typography variant="h5" gutterBottom component="div" >서비스 상세설명</Typography>
-                        <Typography>더보기/접기 해야함.</Typography>
+                        <Typography>더보기/접기</Typography>
                     </Box>
                 </TabPanel>
 
